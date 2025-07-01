@@ -7,6 +7,7 @@ Its primary purpose is to help users log daily expenses, set monthly budgets, an
 This project simplifies everyday money management by allowing users to enter expense details, store them locally, and view summaries that promote better financial decision-making.
 
  2. Key Features
+
 Feature                                                      Description
 * 💵 Add Daily Expense                                       Users can enter an amount, category (e.g., Food, Travel), and notes
 * 🧾 Monthly Budget                                          Allows setting a fixed monthly budget and checks how much remains
