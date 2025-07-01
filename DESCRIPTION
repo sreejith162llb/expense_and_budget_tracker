@@ -1,0 +1,67 @@
+Expense & Budget Tracker
+
+ 1. Project Overview
+
+The Expense & Budget Tracker is a GUI-based personal finance tool built in Python using Tkinter.
+Its primary purpose is to help users log daily expenses, set monthly budgets, and analyze their spending habits through clear reports and visual charts.
+This project simplifies everyday money management by allowing users to enter expense details, store them locally, and view summaries that promote better financial decision-making.
+
+ 2. Key Features
+Feature                                                      Description
+* 💵 Add Daily Expense                                       Users can enter an amount, category (e.g., Food, Travel), and notes
+* 🧾 Monthly Budget                                          Allows setting a fixed monthly budget and checks how much remains
+* 📊 View Reports                                            Shows total spent, remaining budget, and breakdown per category
+*📈 Pie Chart Visualization                                  Generates a visual summary of expenses using Matplotlib
+💾 Persistent Storage                                        All expense data is stored in a CSV file for portability
+
+ 3. Technologies Used
+
+Technology                      Purpose
+* Python 3.x                      Core programming language
+* Tkinter                         GUI framework to create forms and buttons
+* CSV                             Lightweight file-based storage for expenses
+* Matplotlib                      To create pie charts and visual summaries
+* Datetime                        For recording current date with each expense
+
+
+ 4. Architectural Highlights & Design Choices
+
+GUI-Centric Design:
+
+Chose Tkinter for simplicity and wide support with Python.Designed the app for non-technical users—everything is done via buttons and input fields, no terminal use.
+
+File-Based Data Storage:
+
+CSV was chosen over databases to keep it lightweight, portable, and dependency-free.
+Data entries are timestamped, enabling future filtering by date.
+
+Modular Functional Layout:
+
+UI and logic are separated cleanly.
+Each action (add expense, view report, show chart) is encapsulated in a method.
+
+Visual Reporting:
+
+Used Matplotlib to turn expense data into an easy-to-understand pie chart.
+Helps users make informed decisions visually.
+
+ 5. Challenges and Solutions
+
+Challenge                                                      Solution
+Input validation (e.g., non-numeric values)                    Added try-except blocks and error prompts using messagebox
+Avoiding UI clutter                                            Created a compact layout using grid() with proper padding
+Data storage with no SQL                                       Used structured CSV format, readable and easy to manipulate
+File not found / CSV missing on first run                      Script checks and auto-creates data.csv if missing
+User forgets category or input                                 Required field checks and defaults were added
+
+
+ 6. Future Enhancements
+
+Improvement                          Description
+ User Accounts                       Add login system to support multiple users
+Switch to SQLite or MongoDB          Replace CSV with a real database for scalability
+ Date-Based Filtering                Allow users to filter by week/month or custom date range
+ Export Reports                      Export summaries to PDF or Excel for offline access
+ Web Version                         Rebuild using Flask or Django to make it available online
+ Mobile App                          Create an Android version using Kivy or React Native
+
